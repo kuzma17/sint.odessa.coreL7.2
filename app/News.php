@@ -12,7 +12,7 @@ class News extends Model
     protected $table = 'news';
 
     public function toSearchableArray(){
-        return $this->only(['title', 'content']);
+        return $this->only(['id', 'title', 'content']);
     }
 
     public static function count(){

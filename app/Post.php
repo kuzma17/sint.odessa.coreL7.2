@@ -11,6 +11,6 @@ class Post extends Model
     public $asYouType = true;
 
     public function toSearchableArray(){
-        return $this->only(['title', 'content']);
+        return $this->only(['id', 'title', 'content']);
     }
 }
