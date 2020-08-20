@@ -1,0 +1,2 @@
+"id","1c_id","type_client_id","type_payment_id","client_name","delivery_town","delivery_street","delivery_house","delivery_house_block","delivery_office","phone","user_company","company_full","edrpou","inn","code_index","region","area","city","street","house","house_block","office","created_at","updated_at","name","email"
+"","1234567","2","2","TESTИванов","","","0","","0","0987654312","TestFirm","NULL","NULL","1234567777","NULL","NULL","NULL","NULL","NULL","NULL","NULL","NULL","2018-03-30 20:27:52","2018-08-04"
