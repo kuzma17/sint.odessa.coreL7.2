@@ -19,7 +19,7 @@
                     <td>{{ $order->type_order->name }}</td>
                     <td>{{ date_format($order->created_at, "d.m.Y") }}</td>
                     <td>{{ $order->status->name_site }}</td>
-                    <td>{{ $order->act_repair->status_repair->name or '' }}</td>
+                    <td>@if(isset($order->act_repair->status_repair)){{ $order->act_repair->status_repair->name}}@endif</td>
                 </tr>
              @endforeach
             </tbody>

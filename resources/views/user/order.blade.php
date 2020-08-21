@@ -17,7 +17,7 @@
                     <tbody>
                     <tr><td >Статус:</td><td>{{ $order->status->name_site }}</td></tr>
                     <tr><td width="200">Тип услуги:</td><td>{{ $order->type_order->name }}</td></tr>
-                    <tr><td>Тип пользователя:</td><td>{{ $order->type_client->name }}</td></tr>
+                    <tr><td>Тип пользователя:</td><td>@if(isset($order->type_client)){{ $order->type_client->name }}@endif</td></tr>
                     <tr><td>@if( $order->type_client_id == 2 )Компания: @else ФИО: @endif</td><td>{{ $order->client_name }}</td></tr>
                     @if( $order->type_client_id == 2 )
                         <tr><td>ФИО представителя компании:</td><td>{{ $order->	user_company }}</td></tr>

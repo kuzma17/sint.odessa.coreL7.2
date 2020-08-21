@@ -88,16 +88,16 @@ class OrderController extends Controller
 
             $order->type_order_id = $request->input('type_order');
 
-            $order->type_client_id = $request->input('order_type_client');
-            $profile->type_client_id = $request->input('order_type_client');
+           // $order->type_client_id = $request->input('order_type_client');
+          //  $profile->type_client_id = $request->input('order_type_client');
 
-            $order->client_name = $request->input('order_client_name');
-            $profile->client_name = $request->input('order_client_name');
+           // $order->client_name = $request->input('order_client_name');
+          //  $profile->client_name = $request->input('order_client_name');
 
             $user->email = $request->input('order_email');
 
-            $order->phone = $request->input('order_phone');
-            $profile->phone = $request->input('order_phone');
+           // $order->phone = $request->input('order_phone');
+           // $profile->phone = $request->input('order_phone');
 
             $order->delivery_town = $request->input('order_delivery_town');
             $profile->delivery_town = $request->input('order_delivery_town');

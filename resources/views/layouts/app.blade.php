@@ -74,9 +74,9 @@
         </div>
         <div class="col-sm-12 col-md-6 col-lg-4" style="padding-top: 15px">
         @if (Auth::guest())
-            <!--<a href="{{ url('/user/order-modal') }}" class="btn btn-success btn-top" ><i class="glyphicon glyphicon-plus"></i> Заказать услугу </a>-->
+            <a href="{{ url('/user/order-modal') }}" class="btn btn-success btn-top" ><i class="glyphicon glyphicon-plus"></i> Заказать услугу </a>
         @else
-            <!--<a href="#" class="btn btn-success btn-top" @if(URL::current() != url('/order')) data-toggle="modal" data-target="#orderModal" @endif><i class="glyphicon glyphicon-plus"></i> Сделать заказ </a>-->
+            <a href="#" class="btn btn-success btn-top" @if(URL::current() != url('/order')) data-toggle="modal" data-target="#orderModal" @endif><i class="glyphicon glyphicon-plus"></i> Сделать заказ </a>
             @endif
             <a href="http://sint-market.com" class="btn  btn-warning btn-top" target="_blank"><i
                         class="glyphicon glyphicon-shopping-cart"></i> Перейти в магазин</a>

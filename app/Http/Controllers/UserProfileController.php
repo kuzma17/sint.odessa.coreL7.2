@@ -10,6 +10,7 @@ use Hash;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Str;
 use Image;
 
 class UserProfileController extends Controller
@@ -121,7 +122,7 @@ class UserProfileController extends Controller
 
                 $image = $request->file('avatar');
                 Image::make($image->getRealPath())->resize(160, 160)->save();
-                $saveImageName = str_random(10) . '.' . $image->getClientOriginalExtension();
+                $saveImageName = Str::random(10) . '.' . $image->getClientOriginalExtension();
 
             if(UserAvatar::where('user_id', $user->id)->first()) {
                 $avatar = UserAvatar::where('user_id', $user->id)->first();
